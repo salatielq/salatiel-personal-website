@@ -38,12 +38,7 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a>
+              Escrito por <strong>{author}</strong>, um designer que decidiu ser desenvolvedor front-end e agora escreve sobre essa nova jornada no universo do Javascript.
             </p>
           </div>
         )

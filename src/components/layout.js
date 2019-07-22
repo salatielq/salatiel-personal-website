@@ -14,6 +14,7 @@ class Layout extends React.Component {
         <h1
           style={{
             ...scale(1.5),
+            fontFamily: `DM Sans, sans-serif`,
             marginBottom: rhythm(1.5),
             marginTop: 0,
           }}
@@ -34,7 +35,7 @@ class Layout extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: `Montserrat, sans-serif`,
+            fontFamily: `DM Sans, sans-serif`,
             marginTop: 0,
           }}
         >
@@ -46,7 +47,7 @@ class Layout extends React.Component {
             }}
             to={`/`}
           >
-            {title}
+            {'← Salatiel Queiroz'}
           </Link>
         </h3>
       )
@@ -58,6 +59,7 @@ class Layout extends React.Component {
           marginRight: `auto`,
           maxWidth: rhythm(24),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          fontFamily: `DM Sans, sans-serif`,
         }}
       >
         <header>{header}</header>

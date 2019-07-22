@@ -39,7 +39,26 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              classPrefix: "language-",
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
+            }
+          },
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
@@ -69,9 +88,23 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        fonts: [
+          {
+            family: `DM Sans`,
+            variants: [`400`, `700`],
+            subsets: [`latin-ext`],
+          },
+          {
+            family: `Merriweather`,
+            variants: [`400`, `700`]
+          },
+          {
+            family: `Fira Mono`,
+            variants: [`400`]
+          },
+        ],
       },
     },
   ],

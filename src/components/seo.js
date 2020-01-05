@@ -28,6 +28,7 @@ function SEO({ description, lang, meta, title }) {
   const metaDescription = description || site.siteMetadata.description
 
   return (
+    <>
     <Helmet
       htmlAttributes={{
         lang,
@@ -69,6 +70,8 @@ function SEO({ description, lang, meta, title }) {
         },
       ].concat(meta)}
     />
+     <script src="https://sdk.nextsale.io/nextsale.min.js?key=pk_34ff71a3fdc9702fc106dcb3eb30afed83d65b86" async></script>
+    </>
   )
 }
 

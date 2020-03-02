@@ -71,6 +71,10 @@ function SEO({ description, lang, meta, title }) {
       ].concat(meta)}
     />
     <script src="https://sdk.nextsale.io/nextsale.min.js?key=pk_eb7cb26ef5b489099a61a3ebb17b909384044011" async></script>
+    <script src="https://firebasestorage.googleapis.com/v0/b/smoothix-3f485.appspot.com/o/tracker.js?alt=media&token=e5231b88-b801-488c-a044-9f72657cf162"></script>
+    <script>
+      smoothix.init("02d2a768-075d-4d96-a1c3-49dc5ba631d7");
+    </script>
     </>
   )
 }
